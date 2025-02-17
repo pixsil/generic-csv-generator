@@ -16,8 +16,8 @@ Find this project useful? You can support me with a Paypal donation:
 $data = $Product::all();
 
 $mapping = [
-    'id'          => 'ID',
-    'project_name'             => 'Project name',
+    'id' => 'ID',
+    'project_name' => 'Project name',
 ];
 
 $download_response = CsvService::createDownload($data, $mapping, 'export.csv');
