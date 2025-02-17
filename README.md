@@ -12,6 +12,10 @@ Find this project useful? You can support me with a Paypal donation:
 
 ## Usage
 
+You can map the column names to the fields of the collection, like below.
+
+In controller:
+
 ```php
 $data = $Product::all();
 
@@ -21,4 +25,6 @@ $mapping = [
 ];
 
 $download_response = CsvService::createDownload($data, $mapping, 'export.csv');
+
+return download_response;
 ```
